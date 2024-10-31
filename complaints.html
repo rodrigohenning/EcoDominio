@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <title>EcoDomínio - Reclamações e Sugestões</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="container">
+        <a href="/" class="nav-brand">EcoDomínio</a>
+        <div class="nav-links">
+          <a href="dashboard.html">Dashboard</a>
+          <a href="families.html">Famílias</a>
+          <a href="news.html">Notícias</a>
+          <a href="complaints.html">Reclamações</a>
+          <a href="index.html">Sair</a>
+        </div>
+      </div>
+    </nav>
+    
+    <main>
+      <div class="container">
+        <div class="card">
+          <h2>Reclamações e Sugestões</h2>
+          <form id="complaintForm">
+            <div class="form-group">
+              <label>Tipo</label>
+              <select name="type" class="form-control" required>
+                <option value="complaint">Reclamação</option>
+                <option value="suggestion">Sugestão</option>
+              </select>
+            </div>
+            
+            <div class="form-group">
+              <label>Título</label>
+              <input type="text" name="title" class="form-control" required>
+            </div>
+            
+            <div class="form-group">
+              <label>Descrição</label>
+              <textarea name="description" class="form-control" rows="4" required></textarea>
+            </div>
+            
+            <div class="form-group">
+              <label>Anexar Arquivo</label>
+              <input type="file" name="attachment" class="form-control" 
+                accept="image/*,.pdf,.doc,.docx">
+            </div>
+            
+            <button type="submit" class="btn">Enviar</button>
+          </form>
+        </div>
+      </div>
+    </main>
+    
+    <script src="script.js"></script>
+  </body>
+</html>
